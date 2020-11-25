@@ -206,8 +206,6 @@ function steady_state(A, Z, Zmat,
     )
     
     # Don't let r be above the rate of time discounting
-    # I don't know why he does this when it's just overwritten
-    # in the while loop anyway...
     r = min(rental(K,N,α), 1/β-1)
     w = wage(K,N,α)
     
